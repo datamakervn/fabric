@@ -1,0 +1,27 @@
+{
+  "name": "powerbi-xmla-chatbot",
+  "version": "1.0.0",
+  "description": "Power BI XMLA Chatbot Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "npm install && cd ../frontend && npm install && npm run build && cd ../backend",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@azure/msal-node": "^2.15.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

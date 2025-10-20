@@ -1,0 +1,77 @@
+# =================================
+# Dependencies - Không push thư mục node_modules
+# =================================
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# =================================
+# Environment variables - QUAN TRỌNG: Không push API keys
+# =================================
+.env
+.env.local
+.env.production
+.env.development
+backend/.env
+frontend/.env
+
+# =================================
+# Build output - File tự động generate
+# =================================
+build/
+dist/
+frontend/build/
+backend/build/
+*.tsbuildinfo
+
+# =================================
+# Vercel - Vercel tự động tạo
+# =================================
+.vercel
+.vercel.json
+
+# =================================
+# Logs - File log không cần thiết
+# =================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# =================================
+# OS generated files
+# =================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =================================
+# IDE - Settings của editor
+# =================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# =================================
+# Testing
+# =================================
+coverage/
+.nyc_output/
+
+# =================================
+# Temporary files
+# =================================
+*.tmp
+*.temp
+.cache/
