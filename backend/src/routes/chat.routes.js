@@ -26,7 +26,7 @@ function formatQueryResultForClaude(queryResult, userMessage) {
       
       // Format Value to billions
       if (cleanKey === 'Value' && typeof value === 'number') {
-        const billions = value / 1000000000000;
+        const billions = value / 1000000000; //chia cho 1 tỷ
         formattedValue = `${billions.toFixed(2)} tỷ đồng (${value.toLocaleString('vi-VN')} đồng)`;
       } 
       // Format Month
