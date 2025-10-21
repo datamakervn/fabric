@@ -175,6 +175,16 @@ Bắt đầu response với business analysis, không có code blocks.`
   }
 });
 
+// GET /api/chat - For testing in browser
+router.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Power BI Chat API is running',
+    endpoint: 'POST /api/chat/',
+    usage: 'Send POST request with body: {"message": "your question"}'
+  });
+});
+
 // GET /api/chat/health - Health check
 router.get('/health', (req, res) => {
   res.json({
