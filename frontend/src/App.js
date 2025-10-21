@@ -9,8 +9,8 @@ function App() {
   const messagesEndRef = useRef(null);
 
   const API_BASE_URL = process.env.NODE_ENV === 'production'
-    ? '/api/chat'
-    : 'http://localhost:3001/api/chat';
+    ? 'https://powerbi-chatbot-umc-a3bbhShaf4dpb5gt.southeastasia-01.azurewebsites.net/api/chat'
+    : 'https://powerbi-chatbot-umc-a3bbhShaf4dpb5gt.southeastasia-01.azurewebsites.net/api/chat';
 
   useEffect(() => {
     scrollToBottom();
